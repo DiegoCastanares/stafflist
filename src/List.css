@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.person {
+  display: flex;
+  column-gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  /* height: 100px; */
+}
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--light-shadow);
+}
+.person h4 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+h4 {
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+p {
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.person p {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+.contact {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.icon {
+  padding-bottom: 0px;
+  margin-bottom: -2px;
+}
+
+@media (min-width: 678px) {
+  .card {
+    margin-left: 108px;
+    margin-right: 80px;
+    width: 600px;
+    height: 400px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .person {
+    width: 275px;
+    height: 100px;
+  }
+}
